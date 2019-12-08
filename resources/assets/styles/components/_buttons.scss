@@ -1,17 +1,29 @@
 .btn {
   color: $font-color-primary;
-  font-family: $font-btn;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  background-color: $accent;
-  display: inline-block;
   width: auto;
   border: 0;
-  border-radius: 0 !important;
-}
+  line-height: 1;
+  padding: 0.2rem 1rem;
 
-.btn-lg {
-  transform: scale(1.5);
-  transform-origin: 0;
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--red {
+    background: $accent;
+    color: white;
+
+    &:hover {
+      background: $black;
+    }
+  }
+
+  &--large {
+    @extend .heading-md;
+  }
+
+  &--arrow {
+    @extend .arrow;
+  }
 }
