@@ -1,0 +1,12 @@
+.hero-carousel {
+  background: url("../images/hero-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__header {
+    color: $accent;
+  }
+}

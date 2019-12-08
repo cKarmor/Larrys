@@ -6,7 +6,15 @@ $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
 
 /** Theme Colors **/
-$primary: #303030;
-$secondary: #262626;
-$accent: #3ef3ec;
-$font-color: white;
+$primary: white;
+$second: #f7f7f7;
+$third: black;
+$accent: #ee0c37;
+
+/** Fonts **/
+$font-primary: "Josefin Sans", sans-serif;
+$font-header: $font-primary;
+$font-btn: $font-primary;
+
+$font-color-primary: $third;
+$font-color-second: $primary;

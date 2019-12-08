@@ -1,0 +1,17 @@
+.btn {
+  color: $font-color-primary;
+  font-family: $font-btn;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  background-color: $accent;
+  display: inline-block;
+  width: auto;
+  border: 0;
+  border-radius: 0 !important;
+}
+
+.btn-lg {
+  transform: scale(1.5);
+  transform-origin: 0;
+}
