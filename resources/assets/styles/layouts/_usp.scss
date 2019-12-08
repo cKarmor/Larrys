@@ -1,0 +1,22 @@
+.usp {
+  &__arrow-grey {
+    display: inline-block;
+    background: url("../images/arrow-grey.svg") no-repeat;
+    height: 100px;
+  }
+
+  &__arrow-red {
+    display: inline-block;
+    background: url("../images/arrow-red.svg") no-repeat;
+    height: 100px;
+    transform: rotate(180deg);
+
+    @include media-breakpoint-up(md) {
+      height: 200px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 50px;
+    }
+  }
+}
