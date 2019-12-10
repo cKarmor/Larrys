@@ -1,1 +1,1 @@
-{{ dd($testimonials) }}
+// use $testimonials here
