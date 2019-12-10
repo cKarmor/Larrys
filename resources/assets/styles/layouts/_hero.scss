@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
 
-<<<<<<< HEAD
   @include media-breakpoint-up(md) {
     height: calc(100vh - 92px);
   }
@@ -66,9 +65,5 @@
 
   & .button-wrap {
     margin-top: 34px;
-=======
-  &__heading {
-    color: $accent;
->>>>>>> ac3fc0c5e923cbcf87f45115a86989eb579480e3
   }
 }
