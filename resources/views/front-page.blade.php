@@ -3,7 +3,6 @@
 @section('content')
   @include('partials.hero')
   @include('partials.usp')
-  @include('partials.testimonials')
   @include('partials.about')
   @include('partials.whylarry')
   @include('partials.contact')

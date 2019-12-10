@@ -44,7 +44,7 @@ class FrontPage extends Controller
 
       $testimonial_entries[] = [
         'name' => $testimonial['name'],
-        'testimonial_text' => $testimonial['testimonial_text'],
+        'text' => $testimonial['testimonial_text'],
         'image' => $testimonial['photo'],
       ];
     }

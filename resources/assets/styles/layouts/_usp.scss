@@ -1,3 +1,35 @@
+@mixin arrow($position: "left") {
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 60px;
+    top: 0;
+    height: 100%;
+
+    @if ($position == "left") {
+      transform: translateX(-100%) rotate(180deg);
+      left: 0;
+      right: auto;
+      background: url("../images/arrow-red.svg") no-repeat;
+    }
+
+    @if ($position == "right") {
+      transform: translateX(100%);
+      left: auto;
+      right: 0;
+      background: url("../images/arrow-grey.svg") no-repeat;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 100px;
+  }
+}
+
 .usp {
   position: relative;
   height: 600px;
@@ -63,28 +95,7 @@
   }
 
   &__arrow-grey {
-    display: none;
-
-    @include media-breakpoint-up(md) {
-      display: inline-block;
-      height: 120px;
-      width: 60px;
-      position: absolute;
-      top: 0;
-      right: calc(25vw - 77px);
-      background: url("../images/arrow-grey.svg") no-repeat;
-      z-index: 10;
-    }
-
-    @include media-breakpoint-up(lg) {
-      right: calc(25vw - 77px);
-    }
-
-    @include media-breakpoint-up(xl) {
-      right: calc(25vw - 117px);
-      height: 200px;
-      width: 100px;
-    }
+    @include arrow("right");
   }
 
   &__red {
@@ -138,6 +149,7 @@
     padding-left: 20px;
     padding-right: 20px;
     max-width: 900px;
+    width: 100%;
 
     @include media-breakpoint-up(md) {
       flex-direction: row;
@@ -150,25 +162,7 @@
   }
 
   &__arrow-red {
-    display: none;
-
-    @include media-breakpoint-up(md) {
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-      height: 120px;
-      width: 60px;
-      right: 75vw;
-      background: url("../images/arrow-red.svg") no-repeat;
-      z-index: 10;
-      transform: rotate(180deg);
-    }
-
-    @include media-breakpoint-up(xl) {
-      right: 75vw;
-      height: 200px;
-      width: 100px;
-    }
+    @include arrow("left");
   }
 
   &__testimonial-testimony {

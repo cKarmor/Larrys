@@ -1,0 +1,14 @@
+.js-testimonial-carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  outline: 0;
+
+  &__slide {
+    width: 100%;
+    display: flex;
+    min-width: 100%;
+    padding: 1rem;
+  }
+}
