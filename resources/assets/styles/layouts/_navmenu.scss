@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 //TODO: I'm stuffing all header and nav styles in this file - then move it later
+=======
+//TODO: I'm stuffing all header and nav styles in this file - we'll move it later
+>>>>>>> ac3fc0c5e923cbcf87f45115a86989eb579480e3
 .header__nav {
   margin-left: auto;
 }
@@ -6,7 +10,11 @@
 .header__logo {
   margin-right: auto;
   width: 220px;
+<<<<<<< HEAD
   padding: 1rem 1rem 1rem 0;
+=======
+  padding: 1rem;
+>>>>>>> ac3fc0c5e923cbcf87f45115a86989eb579480e3
 
   &-image {
     max-width: 100%;
@@ -18,12 +26,15 @@
   flex-direction: row;
   align-items: center;
   height: 100%;
+<<<<<<< HEAD
   background: $white;
 
   &__wrap {
     display: flex;
     align-items: center;
   }
+=======
+>>>>>>> ac3fc0c5e923cbcf87f45115a86989eb579480e3
 }
 
 .nav {

@@ -1,0 +1,10 @@
+diff a/resources/assets/config.json b/resources/assets/config.json	(rejected hunks)
+@@ -9,7 +9,7 @@
+     ]
+   },
+   "publicPath": "/wp-content/themes/larryslearners",
+-  "devUrl": "http://ensowordpress.test",
++  "devUrl": "https://www.larry.local",
+   "proxyUrl": "http://localhost:3000",
+   "cacheBusting": "[name]_[hash:8]",
+   "watch": [
