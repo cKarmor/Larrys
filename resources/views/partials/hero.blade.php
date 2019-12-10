@@ -1,9 +1,7 @@
-<section class="hero-carousel row">
+<section class="hero-carousel row" style="background-image: url({{ $main_banner['image'] }})">
   <div class="wrap container" >
-    <h2 class="header header-lg accent hero-carousel__header">Become Independent</h2>
-    <p>Just think, what you could be doing right now if only you had your full driving licence?</p>
-    <p>We don’t just teach people to drive at Larry&apos;s Learners, we give 
-freedom and independence. Get yours today!</p>
-    <button class="btn btn-lg">Book a Lesson</button>
+    <h2 class="heading-lg accent hero-carousel__header">{{ $main_banner['heading'] }}</h2>
+    <p>{{ $main_banner['text'] }}</p>
+    <a href="#book-now" class="btn btn--large btn--red btn--arrow">Book a Lesson</a>
   </div>
 </section>
