@@ -1,0 +1,78 @@
+.contact {
+  background-color: $second;
+
+  &__headings {
+    margin-bottom: 26px;
+  }
+
+  &__main-heading-container {
+    margin-top: 80px;
+  }
+
+  &__main-heading {
+    margin-bottom: 11px;
+    text-align: center;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__heading-tel {
+    font-size: 1.7rem;
+  }
+
+  &__form-font {
+    font-size: 1.2rem !important;
+    line-height: 1.6rem !important;
+    margin-bottom: 20px;
+    background-color: $second;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 1.4rem !important;
+      line-height: 1.6rem !important;
+    }
+  }
+
+  &__form-name {
+    height: 2em;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $third;
+
+    &:focus {
+      outline-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  &__form-tel {
+    height: 2em;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $third;
+
+    &:focus {
+      outline-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  &__form-message {
+    min-height: 1.6em;
+    height: 1.6em;
+    max-height: 50vh;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $third;
+
+    &:focus {
+      outline-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  & .button-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+  }
+}

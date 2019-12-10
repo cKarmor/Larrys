@@ -1,0 +1,55 @@
+.whylarry {
+  background: url("../images/traffic.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &__main-heading-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  &__main-heading {
+    color: $font-color-second;
+    margin-bottom: 60px;
+  }
+
+  &__boxes {
+    padding-bottom: 90px;
+  }
+
+  &__box {
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__box-inner {
+    height: 350px;
+    background-color: $accent;
+    color: $font-color-second;
+    padding: 40px;
+
+    @include media-breakpoint-up(sm) {
+      height: 300px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 437px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 376px;
+    }
+  }
+
+  &__box-heading {
+    color: $font-color-second;
+    border-bottom: 2px solid $primary;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}

@@ -1,10 +1,58 @@
-.header {
-  font-family: $font-header;
+html {
+  font-size: $base-font-size;
+}
+
+.body-font {
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: $font-color-primary;
+}
+
+.body-font--color-second {
+  @extend .body-font;
+
+  color: $font-color-second;
+}
+
+.heading {
+  font-family: $font-heading;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  color: $font-color-primary;
+
+  &--accent {
+    color: $accent !important;
+  }
 }
 
-.header-lg {
-  font-size: 60px;
+.heading-sm {
+  @extend .heading;
+
+  font-size: 1rem;
+}
+
+.heading-md {
+  @extend .heading;
+
+  font-size: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.2rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 1.4rem;
+  }
+}
+
+.heading-lg {
+  @extend .heading;
+
+  font-size: 2rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+  }
 }

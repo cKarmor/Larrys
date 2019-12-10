@@ -16,7 +16,6 @@
 @import "common/global";
 @import "common/typography";
 @import "components/buttons";
-@import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
 @import "layouts/header";
@@ -28,7 +27,6 @@
 @import "layouts/navmenu";
 @import "layouts/hero";
 @import "layouts/usp";
-
-body {
-  background-color: $primary;
-}
+@import "layouts/about";
+@import "layouts/whylarry";
+@import "layouts/contact";

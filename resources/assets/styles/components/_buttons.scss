@@ -2,16 +2,43 @@
   color: $font-color-second;
   font-family: $font-btn;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  background-color: $accent;
-  display: inline-block;
   width: auto;
   border: 0;
-  border-radius: 0 !important;
+  line-height: 1;
+  padding: 0.4rem 0.8rem 0.1rem;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &--red {
+    background: $accent;
+    color: white;
+
+    &:hover {
+      background: $third;
+    }
+  }
+
+  &--large {
+    font-size: 1.4rem;
+    padding: 0.5rem 0.6rem 0.2rem;
+  }
+
+  &__arrow {
+    fill: $accent;
+
+    &--hover {
+      fill: $third !important;
+    }
+  }
 }
 
-.btn-lg {
-  transform: scale(1.5);
-  transform-origin: 0;
+.button-wrap {
+  display: flex;
 }

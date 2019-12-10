@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg enable-background="new 0 0 324 223" version="1.1" viewBox="0 0 324 223" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css">
+	.st0{fill:none;stroke:#CCCCCC;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#EE0C37;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:#CCCCCC;}
+	.st3{fill:#EE0C37;}
+</style>
+	<polyline class="st0" points="284 6 317 6 317 59 2 59 2 220 83 220" />
+	<polyline class="st1" points="284 1 322 1 322 65 8 65 8 215 83 215" />
+	<polygon class="st2" points="284 5 282 7 284 9" />
+	<polygon class="st3" points="83 217 85 215 83 213" />
+</svg>

@@ -1,12 +1,69 @@
 .hero-carousel {
-  background: url("../images/hero-bg.jpg") no-repeat;
-  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  &__header {
-    color: $accent;
+  @include media-breakpoint-up(md) {
+    height: calc(100vh - 92px);
+  }
+
+  &__bg {
+    background: url("../images/hero-bg-sm.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+
+    @include media-breakpoint-up(md) {
+      background: url("../images/hero-bg-lg.jpg") no-repeat;
+      background-size: cover;
+      height: calc(100vh + 120px);
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: calc(100vh + 200px);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-up(sm) {
+      display: block;
+    }
+  }
+
+  &__heading {
+    max-width: 400px;
+    text-align: center;
+
+    @include media-breakpoint-only(xs) {
+      max-width: initial;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      max-width: initial;
+      text-align: left;
+    }
+  }
+
+  &__p {
+    max-width: 400px;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      max-width: 500px;
+      text-align: left;
+    }
+  }
+
+  & .button-wrap {
+    margin-top: 34px;
   }
 }

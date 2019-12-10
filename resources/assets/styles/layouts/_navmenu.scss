@@ -1,0 +1,59 @@
+//TODO: I'm stuffing all header and nav styles in this file - then move it later
+.header__nav {
+  margin-left: auto;
+}
+
+.header__logo {
+  margin-right: auto;
+  width: 220px;
+  padding: 1rem 1rem 1rem 0;
+
+  &-image {
+    max-width: 100%;
+  }
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  background: $white;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav {
+  background: $white;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  height: 100%;
+
+  a {
+    color: $black;
+    font-family: $font-primary;
+    font-weight: 600;
+    padding: 2rem 2rem;
+    letter-spacing: 1.3px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.2rem; //TODO: work out what font style this is and make it global
+
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
+  }
+
+  .book-button a {
+    @extend .btn;
+    @extend .btn--red;
+  }
+}
