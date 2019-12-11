@@ -1,3 +1,8 @@
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+  <span> </span>
+  <span> </span>
+  <span> </span>
+</button>
 <header class="nav-container col-12" id="nav-container">
   <div class="container nav-container__wrap">
     <a class="header__logo" href="../#home">

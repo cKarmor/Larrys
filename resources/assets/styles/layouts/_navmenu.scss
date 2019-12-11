@@ -12,7 +12,11 @@
   }
 
   &-image {
-    max-width: 100%;
+    max-width: 140px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -26,6 +30,8 @@
   &__wrap {
     display: flex;
     align-items: center;
+    margin: 0 1rem;
+    max-width: 100%;
   }
 }
 
@@ -43,6 +49,8 @@
     color: $black;
     font-family: $font-primary;
     font-weight: 600;
+    padding: 2rem 2rem;
+    padding-bottom: 1.4rem;
     letter-spacing: 1.3px;
     display: block;
     text-transform: uppercase;
@@ -68,5 +76,127 @@
   .book-button a {
     @extend .btn;
     @extend .btn--red;
+
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+}
+
+// Mobile menu
+@include media-breakpoint-down(md) {
+  .header__nav {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    background: $white;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    transition: transform 0.3s ease;
+    text-align: left;
+    box-shadow: -10px 0 20px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    transform: translateX(110%);
+
+    @at-root .nav-open & {
+      transform: translateX(0);
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      padding-top: 4rem;
+      padding-left: 0;
+
+      & > li {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        & > a {
+          padding: 1.2rem;
+          width: 100%;
+          display: block;
+          text-align: left;
+          border-bottom: 1px solid #e3e3e3;
+        }
+
+        &:last-child > a {
+          border-bottom: 0;
+          text-align: center;
+          margin-left: 0;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+// Menu Toggle Button
+.navbar-toggler {
+  border: none;
+  z-index: 9999;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+
+  span {
+    display: block;
+    background-color: $accent;
+    height: 4px;
+    border-radius: 3px;
+    width: 38px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transform: rotate(0deg);
+    position: relative;
+    left: 0;
+    opacity: 1;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      transition: transform 0.35s ease-in-out;
+    }
+  }
+
+  @at-root .nav-open & {
+    span:nth-child(1) {
+      position: absolute;
+      left: 12px;
+      top: 10px;
+      transform: rotate(135deg);
+      opacity: 0.9;
+    }
+
+    span:nth-child(2) {
+      height: 12px;
+      visibility: hidden;
+      background-color: transparent;
+    }
+
+    span:nth-child(3) {
+      position: absolute;
+      left: 12px;
+      top: 10px;
+      transform: rotate(-135deg);
+      opacity: 0.9;
+    }
   }
 }
