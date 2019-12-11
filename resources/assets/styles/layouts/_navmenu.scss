@@ -3,7 +3,6 @@ body.nav-open {
   overflow-y: scroll;
 }
 
-//TODO: I'm stuffing all header and nav styles in this file - then move it later
 .header__nav {
   margin-left: auto;
 }
@@ -60,18 +59,7 @@ body.nav-open {
     letter-spacing: 1.3px;
     display: block;
     text-transform: uppercase;
-    padding: 1rem;
     font-size: 1.2rem;
-
-    @include media-breakpoint-down(md) {
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-
-    @include media-breakpoint-down(xs) {
-      padding: 0.4rem;
-      font-size: 0.8rem;
-    }
 
     &:hover {
       color: $accent;
@@ -135,13 +123,6 @@ body.nav-open {
           text-align: left;
           border-bottom: 1px solid #e3e3e3;
         }
-
-        &:last-child > a {
-          border-bottom: 0;
-          text-align: center;
-          margin-left: 0;
-          margin-top: 2rem;
-        }
       }
     }
   }
@@ -153,6 +134,7 @@ body.nav-open {
   position: absolute;
   right: 1rem;
   top: 1rem;
+  background-color: white;
 
   @include media-breakpoint-up(lg) {
     display: none;
