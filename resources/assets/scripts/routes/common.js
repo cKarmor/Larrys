@@ -1,6 +1,7 @@
 import createArrow from '../custom/createArrow';
 import autoExpand from '../custom/autoExpand';
 import testimonialCarousel from '../custom/testimonialCarousel';
+import mobileMenu from '../custom/mobileMenu';
 
 export default {
   init() {
@@ -17,6 +18,8 @@ export default {
     }, false);
 
     testimonialCarousel();
+
+    mobileMenu();
 
   },
   finalize() {
