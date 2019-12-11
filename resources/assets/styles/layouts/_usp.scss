@@ -170,6 +170,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
+    min-width: 400px;
+
+    @include media-breakpoint-up(md) {
+      flex-wrap: nowrap;
+      align-items: center;
+    }
 
     @include media-breakpoint-up(md) {
       flex-wrap: nowrap;
@@ -216,22 +222,6 @@
       width: 80px;
       height: 80px;
     }
-
-    &::after {
-      content: "\201C";
-      position: relative;
-      left: 37px;
-      top: -50px;
-      font-family: "Arial", sans-serif;
-      font-size: 100px;
-      color: black;
-
-      @include media-breakpoint-up(xl) {
-        left: 54px;
-        top: -56px;
-        font-size: 115px;
-      }
-    }
   }
 
   &__testimonial-p {
@@ -239,13 +229,28 @@
     color: $font-color-second;
     font-size: 0.9rem;
 
+    &::before {
+      content: "\201C";
+      position: absolute;
+      left: -38px;
+      top: 22px;
+      font-family: "Arial", sans-serif;
+      font-size: 100px;
+      color: black;
+
+      @include media-breakpoint-up(xl) {
+        left: -41px;
+        top: 16px;
+        font-size: 115px;
+      }
+    }
+
     @include media-breakpoint-up(sm) {
       max-width: 400px;
     }
 
     @include media-breakpoint-up(md) {
       margin: 0;
-      max-width: 400px;
       font-size: 0.9rem;
     }
 
@@ -265,7 +270,6 @@
       margin: 0 0 0 5px;
       font-size: 0.8rem;
       min-width: 80px;
-      align-self: center;
     }
 
     @include media-breakpoint-up(xl) {

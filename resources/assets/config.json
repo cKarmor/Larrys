@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/wp-content/themes/larryslearners",
-  "devUrl": "https://www.larry.local",
+  "publicPath": "/wp-content/themes/Larrys",
+  "devUrl": "http://ensowordpress.test",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

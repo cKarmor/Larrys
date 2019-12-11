@@ -89,3 +89,9 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+add_filter("acf/fields/google_map/api", function($api){
+        $api["key"] = "AIzaSyDMr7c6wCInRsYEoWHZZWHTk7IS0_AT0wU";
+        return $api;
+    }
+);

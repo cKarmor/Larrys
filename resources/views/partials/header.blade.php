@@ -1,6 +1,6 @@
 <header class="nav-container col-12" id="nav-container">
   <div class="container nav-container__wrap">
-    <a class="header__logo" href="{{ home_url('/') }}">
+    <a class="header__logo" href="../#home">
       <img class="header__logo-image" src="@php echo App\asset_path('images/logo.svg') @endphp"/>
     </a>
     <nav class="header__nav">

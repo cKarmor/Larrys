@@ -7,10 +7,6 @@
   width: 220px;
   padding: 1rem 1rem 1rem 0;
 
-  @include media-breakpoint-down(xs) {
-    width: 120px;
-  }
-
   &-image {
     max-width: 100%;
   }
@@ -52,11 +48,6 @@
     @include media-breakpoint-down(md) {
       padding: 0.5rem;
       font-size: 1rem;
-    }
-
-    @include media-breakpoint-down(xs) {
-      padding: 0.4rem;
-      font-size: 0.8rem;
     }
 
     &:hover {

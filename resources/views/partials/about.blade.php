@@ -4,7 +4,7 @@
       <div class="col-12 about__heading-container">
         <h1 class="about__welcome heading-lg">Welcome to larry&apos;s learners</h1>
         <h2 class="about__larry-name heading-md heading--accent">I&apos;m Larry</h2>
-        <img class="about__larry-img" src="" alt="">
+        <img class="about__larry-img" src="@php echo App\asset_path('images/larry.jpg') @endphp" alt="Larry Profile Picture">
       </div>
     </div>
     <div class="row">
@@ -24,7 +24,7 @@
         <p class="heading-sm about__cta-tel">Tel: <span class=" heading-md heading--accent">07771 234 567</span></p>
         <p class="heading-sm about__cta-or">Or</p>
         <h3 class="heading-sm about__cta-book">Book a lesson now!</h3>
-        <button class="btn btn--red about__book-btn">Book Now</button>
+        <a href="#book" class="btn btn--red about__book-btn">Book Now</a>
       </div>
     </div>
   </div>

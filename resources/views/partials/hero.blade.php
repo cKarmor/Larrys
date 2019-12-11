@@ -5,6 +5,6 @@
     <p class="hero-carousel__p body-font--color-second">Just think, what you could be doing right now if only you had your full driving licence?</p>
     <p class="hero-carousel__p body-font--color-second">We don’t just teach people to drive at Larry&apos;s Learners, we give 
 freedom and independence. Get yours today!</p>
-    <button class="btn btn--red btn--large">Book a Lesson</button>
+    <a href="#book" class="btn btn--red btn--large">Book a Lesson</a>
   </div>
 </section>

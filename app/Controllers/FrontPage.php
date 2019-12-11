@@ -6,10 +6,6 @@ use Sober\Controller\Controller;
 
 class FrontPage extends Controller
 {
-
-  // why use this?? If we ever wanted to get our data from somewhere else, we could.
-  // the view templates are like dumb components - all they do is display the data we tell them too - we do any logic we need to to get that data here.
-
   /**
    * Main Hero Image
    */
@@ -57,5 +53,13 @@ class FrontPage extends Controller
    */
   public function pageIntro() {
     return get_field('page_intro');
+  }
+
+  public function map() {
+
+    $map = get_field('map'); 
+
+    return $map;
+
   }
 }

@@ -1,0 +1,49 @@
+.book {
+  background-color: $primary;
+
+  &__container {
+    padding-bottom: 80px;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  &__sub-heading {
+    text-align: center;
+  }
+
+  #spinner {
+    stroke: $accent !important;
+  }
+
+  #booking-package_calendarPage {
+    font-family: "Muli", sans-serif !important;
+  }
+
+  .calendarData,
+  .selectedDate,
+  #reservationHeader {
+    font-family: $font-primary !important;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+  }
+
+  .bookingButton,
+  .returnButton,
+  #returnToCalendarButton {
+    @extend .btn;
+    @extend .btn--red;
+
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+      background-color: $third;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
