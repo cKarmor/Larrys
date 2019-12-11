@@ -1,3 +1,8 @@
+body.nav-open {
+  position: fixed;
+  overflow-y: scroll;
+}
+
 //TODO: I'm stuffing all header and nav styles in this file - then move it later
 .header__nav {
   margin-left: auto;
